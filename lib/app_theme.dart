@@ -7,14 +7,20 @@ class AppTheme {
 
   static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
 
-  static ThemeData lightThemeData = themeData(lightColorScheme, _lightFocusColor);
+  static ThemeData lightThemeData = themeData(
+    lightColorScheme,
+    _lightFocusColor,
+  );
 
-  static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
+  static ThemeData themeData(
+    ColorScheme colorScheme,
+    Color focusColor,
+  ) {
     return ThemeData(
       colorScheme: colorScheme,
       textTheme: _textTheme,
       iconTheme: const IconThemeData(color: AppColors.white),
-      canvasColor: colorScheme.background,
+      canvasColor: colorScheme.surface,
       appBarTheme: const AppBarTheme(
         color: AppColors.primaryColor,
       ),
@@ -23,7 +29,7 @@ class AppTheme {
         selectionColor: AppColors.textSelectionColor,
         selectionHandleColor: AppColors.primaryColor,
       ),
-      scaffoldBackgroundColor: colorScheme.background,
+      scaffoldBackgroundColor: colorScheme.surface,
       highlightColor: Colors.transparent,
 
       // accentColor: colorScheme.primary,
@@ -38,16 +44,15 @@ class AppTheme {
     // primaryVariant: AppColors.primaryColor,
     secondary: AppColors.secondaryColor,
     secondaryContainer: AppColors.black,
-    // secondaryVariant: AppColors.black,
-    background: AppColors.primaryColor,
     surface: AppColors.primaryColor,
-    onBackground: Colors.white,
     error: _lightFillColor,
     onError: _lightFillColor,
     onPrimary: _lightFillColor,
     onSecondary: Color(0xFF322942),
     onSurface: Color(0xFF241E30),
     brightness: Brightness.light,
+    background: Color(0xFF322942),
+    onBackground: Color(0xFF322942),
   );
 
   static const _bold = FontWeight.w700;

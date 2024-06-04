@@ -2,20 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:flutterfolio/app_theme.dart';
 import 'package:flutterfolio/configure_web.dart';
 import 'package:flutterfolio/injection_container.dart';
-import 'package:flutterfolio/presentaion/pages/home/home_page.dart';
-import 'package:flutterfolio/presentaion/routes/routes.dart';
+import 'package:flutterfolio/presentation/pages/home/home_page.dart';
+import 'package:flutterfolio/presentation/routes/routes.dart';
 import 'package:flutterfolio/values/values.dart';
 import 'package:layout/layout.dart';
 
-void main() {
+// Home
+// TODO:: add well rounded verbose rotating logos -> representing web, mobile & cloud
+// cloud -> kubernets & docker
+// mobile -> kotlin, android, flutter, jetpack compose,
+// web -> react, javascript
+
+// Certifications
+// TODO:: Add Cloud Certification from Udacity
+
+// Contact
+// TODO:: Fix email service
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
   configureApp();
-  runApp(const MyApp());
+  runApp(const FlutterFolio());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FlutterFolio extends StatelessWidget {
+  const FlutterFolio({super.key});
 
   @override
   Widget build(BuildContext context) {
