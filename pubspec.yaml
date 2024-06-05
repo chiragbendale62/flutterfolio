@@ -39,6 +39,9 @@ flutter:
   assets:
     - assets/images/
     - assets/images/projects/
+    - assets/images/projects/flutterfolio/
+    - assets/images/projects/petomate/
+    - assets/images/projects/wallies/
     - assets/screenshots/
 
   fonts:

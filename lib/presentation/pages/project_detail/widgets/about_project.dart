@@ -51,6 +51,7 @@ class _AboutprojectState extends State<Aboutproject> {
   @override
   Widget build(BuildContext context) {
     double googlePlayButtonWidth = 150;
+    double appleStoreButtonWidth = 150;
     double targetWidth = responsiveSize(context, 118, 150, md: 150);
     double initialWidth = responsiveSize(context, 36, 50, md: 50);
     TextTheme textTheme = Theme.of(context).textTheme;
@@ -220,6 +221,26 @@ class _AboutprojectState extends State<Aboutproject> {
                   child: Image.asset(
                     ImagePath.GOOGLE_PLAY,
                     width: googlePlayButtonWidth,
+                    // fit: BoxFit.fitHeight,
+                  ),
+                ),
+              )
+            : const Empty(),
+        widget.projectData.isOnAppStore
+            ? InkWell(
+                onTap: () {
+                  Functions.launchUrlString(widget.projectData.appStoreUrl);
+                },
+                child: AnimatedPositionedWidget(
+                  controller: CurvedAnimation(
+                    parent: widget.projectDataController,
+                    curve: Animations.textSlideInCurve,
+                  ),
+                  width: appleStoreButtonWidth,
+                  height: 50,
+                  child: Image.asset(
+                    ImagePath.APP_STORE,
+                    width: appleStoreButtonWidth,
                     // fit: BoxFit.fitHeight,
                   ),
                 ),

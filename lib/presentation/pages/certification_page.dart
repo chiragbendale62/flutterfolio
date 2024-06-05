@@ -4,9 +4,11 @@ import 'package:flutterfolio/core/utils/functions.dart';
 import 'package:flutterfolio/presentation/pages/widgets/page_header.dart';
 import 'package:flutterfolio/presentation/pages/widgets/simple_footer.dart';
 import 'package:flutterfolio/presentation/widgets/certification_card.dart';
+import 'package:flutterfolio/presentation/widgets/content_area.dart';
 import 'package:flutterfolio/presentation/widgets/custom_spacer.dart';
 import 'package:flutterfolio/presentation/widgets/page_wrapper.dart';
 import 'package:flutterfolio/values/values.dart';
+import 'package:visibility_detector/visibility_detector.dart';
 
 class CertificationPage extends StatefulWidget {
   static const String certificationPageRoute = StringConst.CERTIFICATION_PAGE;
@@ -86,36 +88,36 @@ class _CertificationPageState extends State<CertificationPage> with TickerProvid
             headingText: StringConst.CERTIFICATIONS,
             headingTextController: _headingTextController,
           ),
-          // VisibilityDetector(
-          //   key: const Key('certifications'),
-          //   onVisibilityChanged: (visibilityInfo) {
-          //     double visiblePercentage = visibilityInfo.visibleFraction * 100;
-          //     if (visiblePercentage > 40) {
-          //       _certificationsController.forward();
-          //     }
-          //   },
-          //   child: Padding(
-          //     padding: padding,
-          //     child: ContentArea(
-          //       width: contentAreaWidth,
-          //       child: AnimatedBuilder(
-          //         animation: _certificationsController,
-          //         builder: (context, child) {
-          //           return Wrap(
-          //             direction: Axis.horizontal,
-          //             spacing: assignWidth(context, 0.05),
-          //             runSpacing: assignHeight(context, 0.02),
-          //             children: _certificateList(
-          //               data: Data.certificationData,
-          //               width: contentAreaWidth,
-          //               spacing: spacing,
-          //             ),
-          //           );
-          //         },
-          //       ),
-          //     ),
-          //   ),
-          // ),
+          VisibilityDetector(
+            key: const Key('certifications'),
+            onVisibilityChanged: (visibilityInfo) {
+              double visiblePercentage = visibilityInfo.visibleFraction * 100;
+              if (visiblePercentage > 40) {
+                _certificationsController.forward();
+              }
+            },
+            child: Padding(
+              padding: padding,
+              child: ContentArea(
+                width: contentAreaWidth,
+                child: AnimatedBuilder(
+                  animation: _certificationsController,
+                  builder: (context, child) {
+                    return Wrap(
+                      direction: Axis.horizontal,
+                      spacing: assignWidth(context, 0.05),
+                      runSpacing: assignHeight(context, 0.02),
+                      children: _certificateList(
+                        data: Data.certificationData,
+                        width: contentAreaWidth,
+                        spacing: spacing,
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
           const CustomSpacer(heightFactor: 0.15),
           const SimpleFooter(),
         ],

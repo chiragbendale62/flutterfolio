@@ -108,10 +108,10 @@ class Data {
       name: StringConst.EXPERIENCE,
       route: StringConst.EXPERIENCE_PAGE,
     ),
-    // NavItemData(
-    //   name: StringConst.CERTIFICATIONS,
-    //   route: StringConst.CERTIFICATION_PAGE,
-    // ),
+    NavItemData(
+      name: StringConst.CERTIFICATIONS,
+      route: StringConst.CERTIFICATION_PAGE,
+    ),
     NavItemData(
       name: StringConst.CONTACT,
       route: StringConst.CONTACT_PAGE,
@@ -318,11 +318,11 @@ class Projects {
     appLogoColor: AppColors.petomateAppLogo,
     projectAssets: [
       ImagePath.PETOMATE_DESC,
-      ImagePath.PETOMATE_FLOW_CHART,
+      // ImagePath.PETOMATE_FLOW_CHART,
       ImagePath.PETOMATE_WIREFRAMES,
-      ImagePath.PETOMATE_MINIMAL_DESIGN,
-      ImagePath.PETOMATE_EASY_ACCESS,
-      ImagePath.PETOMATE_SIMPLE,
+      // ImagePath.PETOMATE_MINIMAL_DESIGN,
+      // ImagePath.PETOMATE_EASY_ACCESS,
+      // ImagePath.PETOMATE_SIMPLE,
       ImagePath.PETOMATE_THANKS,
     ],
     portfolioDescription: StringConst.PETOMATE_DETAIL,

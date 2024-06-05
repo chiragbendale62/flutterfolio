@@ -110,7 +110,7 @@ class _CertificationCardState extends State<CertificationCard> with SingleTicker
                 widget.imageUrl,
                 width: widget.width,
                 height: widget.height,
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
               ),
               // if it is not a tablet or mobile device, allow on hover effect
               !widget.isMobileOrTablet && _hovering

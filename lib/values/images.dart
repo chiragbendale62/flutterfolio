@@ -7,7 +7,7 @@ class ImagePath {
   static const String screenshotsDir = "assets/screenshots";
 
   //Images
-  static const String DEV = "$imageDir/chirag_legend3.jpg";
+  static const String DEV = "$imageDir/chirag_legend.jpg";
 
   static const String WORKS = "$imageDir/works.png";
 
@@ -31,8 +31,8 @@ class ImagePath {
   static const String APP_STORE = "$imageDir/app_store.png";
 
   // Certifications
-  static const String BVM_BTECH_CERT = "$imageDir/bvm_btech_cert.png";
-  static const String DSG_DIPLOMA_CERT = "$imageDir/dsg_diploma_cert.png";
+  static const String BVM_BTECH_CERT = "$imageDir/bvm_btech_cert.jpg";
+  static const String DSG_DIPLOMA_CERT = "$imageDir/dsg_diploma_cert.jpg";
 
   // Projects
 
@@ -46,10 +46,10 @@ class ImagePath {
   // PetoMate
   static const String PETOMATE_COVER = "$projectsDir/petomate/petomate_cover.png";
   static const String PETOMATE_DESC = "$projectsDir/petomate/petomate_description.gif";
-  static const String PETOMATE_EASY_ACCESS = "$projectsDir/petomate/petomate_easy_access.gif";
-  static const String PETOMATE_FLOW_CHART = "$projectsDir/petomate/petomate_flowchart.png";
-  static const String PETOMATE_MINIMAL_DESIGN = "$projectsDir/petomate/petomate_minimal_design.png";
-  static const String PETOMATE_SIMPLE = "$projectsDir/petomate/petomate_simple.png";
+  // static const String PETOMATE_EASY_ACCESS = "$projectsDir/petomate/petomate_easy_access.gif";
+  // static const String PETOMATE_FLOW_CHART = "$projectsDir/petomate/petomate_flowchart.png";
+  // static const String PETOMATE_MINIMAL_DESIGN = "$projectsDir/petomate/petomate_minimal_design.png";
+  // static const String PETOMATE_SIMPLE = "$projectsDir/petomate/petomate_simple.png";
   static const String PETOMATE_THANKS = "$projectsDir/petomate/petomate_thanks.gif";
   static const String PETOMATE_WIREFRAMES = "$projectsDir/petomate/petomate_wireframes.gif";
 
