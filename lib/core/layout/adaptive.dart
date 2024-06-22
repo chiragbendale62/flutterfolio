@@ -47,12 +47,14 @@ bool isDisplayMobileOrTablet(BuildContext context) {
 /// Returns a boolean if we are in a display of [DisplayType.desktop] but less
 /// than [_desktopLandscapeBreakpoint] width. Used to build adaptive and responsive layouts.
 bool isDisplaySmallDesktop(BuildContext context) {
-  return isDisplayDesktop(context) && MediaQuery.of(context).size.width < _desktopLandscapeBreakpoint;
+  return isDisplayDesktop(context) &&
+      MediaQuery.of(context).size.width < _desktopLandscapeBreakpoint;
 }
 
 bool isDisplaySmallDesktopOrIpadPro(BuildContext context) {
   return isDisplaySmallDesktop(context) ||
-      (MediaQuery.of(context).size.width > ipadProBreakpoint && MediaQuery.of(context).size.width < 1170);
+      (MediaQuery.of(context).size.width > ipadProBreakpoint &&
+          MediaQuery.of(context).size.width < 1170);
 }
 
 double widthOfScreen(BuildContext context) {

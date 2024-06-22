@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
-import 'package:flutterfolio/presentation/pages/home/home_page.dart';
+import 'package:flutterfolio/presentation/home/home_page.dart';
 import 'package:flutterfolio/presentation/pages/widgets/socials.dart';
 import 'package:flutterfolio/presentation/widgets/app_logo.dart';
 import 'package:flutterfolio/presentation/widgets/nav_item.dart';

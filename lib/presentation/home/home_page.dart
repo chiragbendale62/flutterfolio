@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
-import 'package:flutterfolio/presentation/pages/home/widgets/home_page_header.dart';
-import 'package:flutterfolio/presentation/pages/home/widgets/loading_page.dart';
+import 'package:flutterfolio/presentation/home/widgets/home_page_header.dart';
+import 'package:flutterfolio/presentation/home/widgets/loading_page.dart';
 import 'package:flutterfolio/presentation/pages/widgets/animated_footer.dart';
 import 'package:flutterfolio/presentation/pages/works/works_page.dart';
 import 'package:flutterfolio/presentation/widgets/animated_positioned_text.dart';

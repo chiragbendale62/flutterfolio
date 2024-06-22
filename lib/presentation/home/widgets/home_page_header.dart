@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
-import 'package:flutterfolio/presentation/pages/home/widgets/scroll_down.dart';
+import 'package:flutterfolio/presentation/home/widgets/scroll_down.dart';
 import 'package:flutterfolio/presentation/pages/widgets/socials.dart';
 import 'package:flutterfolio/presentation/pages/works/works_page.dart';
 import 'package:flutterfolio/presentation/widgets/animated_bubble_button.dart';
@@ -159,9 +159,14 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                               width: screenWidth,
                             ),
                           ),
-                          Image.asset(
-                            ImagePath.DEV_CHIRAG,
-                            width: screenWidth * 0.45,
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(200)),
+                            child: Image.asset(
+                              ImagePath.DEV,
+                              width: screenWidth * 0.40,
+                              height: screenWidth * 0.40,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ],
                       ),
@@ -209,9 +214,14 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                               width: screenWidth * 0.35,
                             ),
                           ),
-                          Image.asset(
-                            ImagePath.DEV_CHIRAG,
-                            width: screenWidth * 0.20,
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(200)),
+                            child: Image.asset(
+                              ImagePath.DEV,
+                              width: screenWidth * 0.18,
+                              height: screenWidth * 0.18,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ],
                       ),

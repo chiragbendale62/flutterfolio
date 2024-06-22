@@ -84,6 +84,12 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> with TickerProvid
     super.dispose();
   }
 
+  @override
+  void didChangeDependencies() {
+    getArguments();
+    super.didChangeDependencies();
+  }
+
   ProjectDetailArguments getArguments() {
     projectDetails = ModalRoute.of(context)!.settings.arguments as ProjectDetailArguments;
     return projectDetails;
@@ -91,7 +97,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> with TickerProvid
 
   @override
   Widget build(BuildContext context) {
-    getArguments();
+    // getArguments();
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? coverTitleStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.white,

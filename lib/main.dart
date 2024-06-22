@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterfolio/app_theme.dart';
 import 'package:flutterfolio/configure_web.dart';
 import 'package:flutterfolio/injection_container.dart';
-import 'package:flutterfolio/presentation/pages/home/home_page.dart';
+import 'package:flutterfolio/presentation/home/home_page.dart';
 import 'package:flutterfolio/presentation/routes/routes.dart';
 import 'package:flutterfolio/values/values.dart';
 import 'package:layout/layout.dart';
@@ -10,7 +10,7 @@ import 'package:layout/layout.dart';
 // Home
 // TODO:: add well rounded verbose rotating logos -> representing web, mobile & cloud
 // cloud -> kubernets & docker
-// mobile -> kotlin, android, flutter, jetpack compose,
+// mobile -> kotlin, android, flutter
 // web -> react, javascript
 
 // Certifications

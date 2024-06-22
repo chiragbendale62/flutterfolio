@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfolio/presentation/home/home_page.dart';
 import 'package:flutterfolio/presentation/pages/about/about_page.dart';
 import 'package:flutterfolio/presentation/pages/certification_page.dart';
 import 'package:flutterfolio/presentation/pages/contact_page.dart';
 import 'package:flutterfolio/presentation/pages/experience_page.dart';
-import 'package:flutterfolio/presentation/pages/home/home_page.dart';
 import 'package:flutterfolio/presentation/pages/project_detail/project_detail_page.dart';
 import 'package:flutterfolio/presentation/pages/works/works_page.dart';
 

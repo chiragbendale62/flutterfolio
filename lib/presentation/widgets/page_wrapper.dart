@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
-import 'package:flutterfolio/presentation/pages/home/home_page.dart';
+import 'package:flutterfolio/presentation/home/home_page.dart';
 import 'package:flutterfolio/presentation/pages/widgets/nav_bar.dart';
 import 'package:flutterfolio/presentation/widgets/app_drawer.dart';
 import 'package:flutterfolio/presentation/widgets/empty.dart';

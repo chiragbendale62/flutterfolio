@@ -42,6 +42,7 @@ class Functions {
       hasNextProject = true;
       nextProject = dataSource[currentProjectIndex + 1];
     }
+
     Navigator.of(context).pushNamed(
       ProjectDetailPage.projectDetailPageRoute,
       arguments: ProjectDetailArguments(
