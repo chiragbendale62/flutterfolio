@@ -32,6 +32,7 @@ class FlutterFolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Layout(
+      format: MaterialLayoutFormat(),
       child: MaterialApp(
         title: StringConst.APP_TITLE,
         theme: AppTheme.lightThemeData,

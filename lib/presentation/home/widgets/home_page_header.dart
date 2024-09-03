@@ -162,7 +162,7 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                           ClipRRect(
                             borderRadius: const BorderRadius.all(Radius.circular(200)),
                             child: Image.asset(
-                              ImagePath.DEV,
+                              ImagePath.ABOUT_DEV,
                               width: screenWidth * 0.40,
                               height: screenWidth * 0.40,
                               fit: BoxFit.cover,
@@ -217,7 +217,7 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                           ClipRRect(
                             borderRadius: const BorderRadius.all(Radius.circular(200)),
                             child: Image.asset(
-                              ImagePath.DEV,
+                              ImagePath.ABOUT_DEV,
                               width: screenWidth * 0.18,
                               height: screenWidth * 0.18,
                               fit: BoxFit.cover,
