@@ -4,6 +4,32 @@ import 'package:flutterfolio/presentation/widgets/animated_bubble_button.dart';
 import 'package:flutterfolio/presentation/widgets/spaces.dart';
 import 'package:flutterfolio/values/values.dart';
 
+Map<String, int> jsonifyColor(Color color) {
+  return {
+    'red': color.red,
+    'blue': color.blue,
+    'green': color.green,
+    'alpha': color.alpha,
+  };
+}
+
+Color deJsonifyColor(Map<String, int> colorMap) {
+  return Color.fromARGB(
+    colorMap['alpha']!,
+    colorMap['red']!,
+    colorMap['green']!,
+    colorMap['blue']!,
+  );
+}
+
+jsonMapToStrIntMap(jsonMap) {
+  Map<String, int> stringIntMap = jsonMap.map((key, value) {
+    // Use int.parse if value is a string, otherwise cast as int
+    return MapEntry(key, value is int ? value : int.parse(value.toString()));
+  });
+  return stringIntMap;
+}
+
 class ProjectItemData {
   ProjectItemData({
     required this.title,

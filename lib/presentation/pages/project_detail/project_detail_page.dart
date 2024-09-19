@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
+import 'package:flutterfolio/presentation/pages/project_detail/models/project_detail_arguments.dart';
 import 'package:flutterfolio/presentation/pages/project_detail/widgets/about_project.dart';
 import 'package:flutterfolio/presentation/pages/project_detail/widgets/next_project.dart';
 import 'package:flutterfolio/presentation/pages/widgets/simple_footer.dart';
@@ -10,26 +11,9 @@ import 'package:flutterfolio/presentation/widgets/content_area.dart';
 import 'package:flutterfolio/presentation/widgets/custom_spacer.dart';
 import 'package:flutterfolio/presentation/widgets/empty.dart';
 import 'package:flutterfolio/presentation/widgets/page_wrapper.dart';
-import 'package:flutterfolio/presentation/widgets/project_item.dart';
 import 'package:flutterfolio/presentation/widgets/spaces.dart';
 import 'package:flutterfolio/values/values.dart';
 import 'package:visibility_detector/visibility_detector.dart';
-
-class ProjectDetailArguments {
-  final ProjectItemData data;
-  final List<ProjectItemData> dataSource;
-  final int currentIndex;
-  final ProjectItemData? nextProject;
-  final bool hasNextProject;
-
-  ProjectDetailArguments({
-    required this.dataSource,
-    required this.data,
-    required this.currentIndex,
-    required this.hasNextProject,
-    this.nextProject,
-  });
-}
 
 class ProjectDetailPage extends StatefulWidget {
   static const String projectDetailPageRoute = StringConst.PROJECT_DETAIL_PAGE;

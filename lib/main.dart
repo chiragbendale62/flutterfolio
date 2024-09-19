@@ -19,6 +19,10 @@ import 'package:layout/layout.dart';
 // Contact
 // TODO:: Fix email service
 
+//add in run args
+// --web-renderer
+// auto
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
@@ -32,7 +36,6 @@ class FlutterFolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Layout(
-      format: MaterialLayoutFormat(),
       child: MaterialApp(
         title: StringConst.APP_TITLE,
         theme: AppTheme.lightThemeData,

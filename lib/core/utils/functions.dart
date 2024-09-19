@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfolio/presentation/pages/project_detail/models/project_detail_arguments.dart';
 import 'package:flutterfolio/presentation/pages/project_detail/project_detail_page.dart';
 import 'package:flutterfolio/presentation/widgets/project_item.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -9,9 +10,7 @@ class Functions {
   // }
 
   static Future<void> launchUrlString(String url) async {
-    if (!await launchUrl(Uri.parse(url))) {
-      throw Exception('Could not launch $url');
-    }
+    await launchUrl(Uri.parse(url));
   }
 
   static Size textSize({
