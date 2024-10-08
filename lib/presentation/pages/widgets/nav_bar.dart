@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutterfolio/core/layout/adaptive.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
+import 'package:flutterfolio/presentation/home/home_page.dart';
 import 'package:flutterfolio/presentation/widgets/aerium_button.dart';
 import 'package:flutterfolio/presentation/widgets/animated_text_slide_box_transition.dart';
 import 'package:flutterfolio/presentation/widgets/app_logo.dart';
 import 'package:flutterfolio/presentation/widgets/empty.dart';
 import 'package:flutterfolio/presentation/widgets/nav_item.dart';
+import 'package:flutterfolio/presentation/widgets/page_wrapper.dart';
 import 'package:flutterfolio/presentation/widgets/spaces.dart';
 import 'package:flutterfolio/values/values.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -61,9 +63,19 @@ class NavBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          AppLogo(
-            fontSize: Sizes.TEXT_SIZE_40,
-            titleColor: appLogoColor,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(
+                HomePage.homePageRoute,
+                arguments: NavigationArguments(
+                  showUnVeilPageAnimation: true,
+                ),
+              );
+            },
+            child: AppLogo(
+              fontSize: Sizes.TEXT_SIZE_40,
+              titleColor: appLogoColor,
+            ),
           ),
           const Spacer(),
           InkWell(
@@ -99,7 +111,17 @@ class NavBar extends StatelessWidget {
         children: [
           Row(
             children: [
-              AppLogo(titleColor: appLogoColor),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushReplacementNamed(
+                    HomePage.homePageRoute,
+                    arguments: NavigationArguments(
+                      showUnVeilPageAnimation: true,
+                    ),
+                  );
+                },
+                child: AppLogo(titleColor: appLogoColor),
+              ),
               const Spacer(),
               ..._buildNavItems(context, menuList: Data.menuItems),
               AeriumButton(

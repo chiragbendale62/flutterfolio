@@ -73,8 +73,8 @@ class _ExperiencePageState extends State<ExperiencePage> with TickerProviderStat
   Widget build(BuildContext context) {
     double contentAreaWidth = responsiveSize(
       context,
-      assignWidth(context, 0.8),
-      assignWidth(context, 0.75),
+      assignWidth(context, 0.85),
+      assignWidth(context, 0.85),
       sm: assignWidth(context, 0.8),
     );
     EdgeInsetsGeometry padding = EdgeInsets.only(

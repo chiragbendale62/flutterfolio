@@ -163,8 +163,8 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                             borderRadius: const BorderRadius.all(Radius.circular(200)),
                             child: Image.asset(
                               ImagePath.ABOUT_DEV,
-                              width: screenWidth * 0.40,
-                              height: screenWidth * 0.40,
+                              width: screenWidth * 0.46,
+                              height: screenWidth * 0.46,
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -218,8 +218,8 @@ class _HomePageHeaderState extends State<HomePageHeader> with TickerProviderStat
                             borderRadius: const BorderRadius.all(Radius.circular(200)),
                             child: Image.asset(
                               ImagePath.ABOUT_DEV,
-                              width: screenWidth * 0.18,
-                              height: screenWidth * 0.18,
+                              width: screenWidth * 0.22,
+                              height: screenWidth * 0.22,
                               fit: BoxFit.cover,
                             ),
                           ),

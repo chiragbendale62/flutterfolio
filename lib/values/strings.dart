@@ -65,11 +65,13 @@ class StringConst {
   static const String ABOUT_DEV_STORY = "Story";
   static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself.";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am flutter developer with great passion for building high quality mobile applications. I have an extensive experience in building mobile applications.";
+      "I am a Flutter Developer with a passion for creating high-performance, visually engaging mobile applications. With over 3 years of experience in cross-platform development, I specialize in UI/UX design, state management, and integrating AI-driven features to build innovative solutions.";
   static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I have a Bachelor's in IT from Birla Vishvakarma Mahavidyalaya University where I majored in Information Technology Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with clients all over the world.";
+      "I hold a Bachelor’s degree in Information Technology from Birla Vishvakarma Mahavidyalaya. My strong technical expertise, combined with excellent communication skills, allows me to collaborate effectively with clients worldwide. I focus on delivering clean, efficient code while optimizing performance and user experience.";
   static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "I am very great at finding solutions to problems and I have a very keen eye for details. I enjoy building fun/useful projects in my free time and open sourcing them. I am an avid reader, lover of all forms art & music, a big fan of video games & I love travelling.";
+      "I excel in collaborating with clients globally, utilizing my strong communication and problem-solving skills to bring ideas to life. With a keen eye for detail, I ensure every project meets the highest standards of functionality and user experience. I’m proactive in staying up-to-date with industry trends, frequently contributing to open-source projects, and continuously refining my skills through creative personal projects.";
+  static const String ABOUT_DEV_STORY_CONTENT_4 =
+      "Outside of work, I enjoy contributing to open-source projects, exploring new tech, and am an avid fan of art, music, gaming, and travel.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
   static const String MOBILE_TECH = "Mobile Technologies";
   static const String OTHER_TECH = "Web / Cloud / Design Technologies";
@@ -179,8 +181,10 @@ class StringConst {
   static const String GITHUB = "Github";
 
   //Certificate Urls
-  static const String BVM_CERT_URL = "https://www.bvmengineering.ac.in/";
-  static const String DSG_DIPLOMA_URL = "https://www.gturesults.in/";
+  static const String BVM_CERT_URL =
+      "https://drive.google.com/file/d/17Aq9w18hHRawjUoccOFeyrWWltQipJ8k/view?usp=sharing";
+  static const String DSG_DIPLOMA_URL =
+      "https://drive.google.com/file/d/1KUioLyXoXYcn_wjkqGNfoVzWrh2d22Sc/view?usp=sharing/";
   // static const String ASSOCIATE_ANDROID_DEV_URL = "https://www.credential.net/b296da88-d6be-4bb5-9756-b13efea3a421";
   // static const String DATA_SCIENCE_CERT_URL = "https://graduation.udacity.com/confirm/7CGEJAFR";
   // static const String CLOUD_DEVELOPER_URL = "https://confirm.udacity.com/PJU23DCP";
@@ -193,7 +197,7 @@ class StringConst {
   static const String DSG = "Dr. S & S. S. Ghandhy College of Engineering & Technology";
 
   //CertificationType
-  static const String BTECH_IT = "BTech In Information Technology";
+  static const String BTECH_IT = "Bachelor In Information Technology";
   static const String DIPLOMA_IT = "Diploma In Information Technology";
   // static const String ASSOCIATE_ANDROID_DEV = "Associate Android Developer";
   // static const String CLOUD_DEVELOPER = "Cloud Developer";
@@ -204,53 +208,55 @@ class StringConst {
   static const String CURRENT_MONTH_YEAR = "Apr 2024 - Current";
   static const String STARTED_MONTH_YEAR = "Aug 2021";
 
-  static const String COMPANY_1 = "Logistreak Solutions ";
-  static const String COMPANY_1_URL = "https://logistreak.com/";
-  static const String POSITION_1 = "Flutter Developer Intern";
+  static const String COMPANY_1 = "Om Tec Web";
+  static const String COMPANY_1_URL = "https://omtecweb.com/";
+  static const String POSITION_1 = "Flutter Developer";
   static const String COMPANY_1_ROLE_1 =
-      "Flutter App Development: Built and designed custom Flutter apps with expertise in UI/UX (Material Design) and state management (e.g., Provider).";
+      "App Development & Integration: Built guest management and golf score display apps; integrated Firebase, RESTful APIs, and optimized data handling.";
   static const String COMPANY_1_ROLE_2 =
-      "API Integration: Fetched and managed data seamlessly within Flutter apps using APIs.";
+      "Performance & State Management: Improved load times by 30%, minimized app size, and used GetX, Provider, and Bloc for efficient state management.";
   static const String COMPANY_1_ROLE_3 =
-      "Interactive UI Creation: Created dynamic and user-friendly interfaces using various Flutter widgets.";
-  static const String LOCATION_1 = "Vesu - Surat, Gujarat";
-  static const String DURATION_1 = "August 2021 - December 2021";
+      "UI/UX & Custom Features: Developed responsive UIs, custom animations, and built photo and PDF editors with advanced features.";
+  static const String COMPANY_1_ROLE_4 =
+      "Cross-Platform Deployment: Created automated booking systems with Google Maps and payments; deployed apps to Play Store and App Store.";
+  static const String COMPANY_1_ROLE_5 =
+      "Collaboration & Support: Worked with cross-functional teams and provided post-launch support and maintenance.";
+  // static const String LOCATION_1 = "Adajan - Surat, Gujarat";
+  static const String DURATION_1 = "Aug 2021 - Jan 2023";
 
-  static const String COMPANY_2 = "OmTec Web";
-  static const String COMPANY_2_URL = "https://omtecweb.com/";
+  static const String COMPANY_2 = "Sourcecube Technologies ";
+  static const String COMPANY_2_URL = "https://sourcecubeindia.com/";
   static const String POSITION_2 = "Flutter Developer";
   static const String COMPANY_2_ROLE_1 =
-      "Flutter App Development: Built diverse cross-platform apps (Firebase, Photo Editing etc.) with clean Dart code and state management (GetX, BLoC).";
+      "App Development: Built custom features for digital wallet, daily planner, vendor drop, boat rental, chanting, and appointment booking apps.";
   static const String COMPANY_2_ROLE_2 =
-      "Agile Project Management: Oversaw development tasks, ensured timely updates, and streamlined processes.";
+      "Optimization: Resolved bugs, reduced widget rebuilds, and optimized state management, app size, and performance.";
   static const String COMPANY_2_ROLE_3 =
-      "Collaborative Problem-Solving: Integrated APIs, implemented state management, and championed knowledge sharing for efficient development";
-  static const String LOCATION_2 = "Adajan - Surat, Gujarat";
-  static const String DURATION_2 = "January 2022 - January 2023";
+      "UI/UX & Integration: Delivered responsive UI for Android/iOS; integrated Firebase, Google Maps, and APIs for enhanced functionality.";
+  static const String COMPANY_2_ROLE_4 =
+      "Collaboration & Mentorship: Led code reviews, mentored developers, and collaborated with backend teams and cross-functional teams.";
+  static const String COMPANY_2_ROLE_5 =
+      "Performance Tuning & Testing: Optimized network calls, asynchronous processes, and conducted testing with Jira for agile tracking.";
+  // static const String LOCATION_2 = "Althan - Surat, Gujarat";
+  static const String DURATION_2 = "Feb 2023 - Mar 2024";
 
-  static const String COMPANY_3 = "Sourcecube Technologies ";
-  static const String COMPANY_3_URL = "https://sourcecubeindia.com/";
+  static const String COMPANY_3 = "VPN INFOTECH";
+  static const String COMPANY_3_URL = "https://www.vpninfotech.com/";
   static const String POSITION_3 = "Flutter Developer";
   static const String COMPANY_3_ROLE_1 =
-      "Cross-Platform App Development: Built beautiful, responsive UIs for Android & iOS using Flutter.";
+      "IoT & UI Development: Developed IoT features, reusable widgets, and managed UI design for seamless app experiences";
   static const String COMPANY_3_ROLE_2 =
-      "Performance & User Experience Champion: Optimized app performance and UX with code & UI improvements (e.g., reduced app startup time by 20%).";
+      "Subscription Management: Handled in-app subscription purchases and restore functionalities using sandbox APIs for iOS.";
   static const String COMPANY_3_ROLE_3 =
-      "Full-Stack Flutter Expertise: Developed platform-specific UIs, integrated Firebase & Google Maps, created custom UIs with advanced widgets, and ensured internationalization.";
-  static const String LOCATION_3 = "Althan - Surat, Gujarat";
-  static const String DURATION_3 = "February 2023 - November 2023";
+      "Widgets & API Integration: Built a widget library, integrated animations, third-party libraries, and REST APIs.";
+  static const String COMPANY_3_ROLE_4 =
+      "Data & Performance: Developed SQLite databases for offline support, optimized app performance, and implemented analytics.";
+  static const String COMPANY_3_ROLE_5 =
+      "Agile & Emerging Tech: Participated in daily stand-ups, integrated AI features, and followed agile methodologies.";
+  // static const String LOCATION_3 = "Adajan - Surat";
+  static const String DURATION_3 = "Apr 2024 - Sept 2024";
 
-  static const String COMPANY_4 = "VPN INFOTECH";
-  static const String COMPANY_4_URL = "https://www.vpninfotech.com/";
-  static const String POSITION_4 = "Flutter Developer";
-  static const String COMPANY_4_ROLE_1 =
-      "Flutter Core Expertise: Deep knowledge of Dart, building custom widgets, state management, and advanced animations.";
-  static const String COMPANY_4_ROLE_2 =
-      "Cross-Platform Development: Experience with Flutter Web and integrating native code (Java/Kotlin, Swift) for a seamless user experience.";
-  static const String COMPANY_4_ROLE_3 =
-      "Performance Optimization: Utilize isolates, local databases, and automated testing to build efficient and maintainable apps.";
-  static const String LOCATION_4 = "Adajan - Surat";
-  static const String DURATION_4 = "April 2024 - Present";
+// ------------------------------------------------------------------------------------------------
 
   //Portfolio, Projects
   static const String PORTFOLIO_SITE = "Flutter Folio";
@@ -262,6 +268,8 @@ class StringConst {
   static const String PORTFOLIO_SITE_DETAIL = "";
   static const String PORTFOLIO_SITE_GITHUB_URL = "https://github.com/chiragbendale62/flutterfolio";
   static const String PORTFOLIO_SITE_WEB_URL = "";
+
+// ------------------------------------------------------------------------------------------------
 
   static const String PETOMATE = "Peto'Mate";
   static const String PETOMATE_PLATFORM = "Android / IOS.";
@@ -277,6 +285,8 @@ class StringConst {
   static const String PETOMATE_APPSTORE_URL =
       "https://apps.apple.com/in/app/petomate/id1662507939?platform=iphone";
 
+// ------------------------------------------------------------------------------------------------
+
   static const String WALLIES_APP = "Wallies";
   static const String WALLIES_APP_PLATFORM = "Android / IOS.";
   static const String WALLIES_APP_SUBTITLE = "Discover unique wallpapers, built with Flutter.";
@@ -287,6 +297,6 @@ class StringConst {
   static const String VISUELT_PRO = "VisueltPro";
 
   //API
-  static const String BASE_URL = "https://portfolio-api-liart.vercel.app/api";
-  static const String GET_IN_TOUCH_POINT = "/getintouch";
+  static const String BASE_URL = "https://api.emailjs.com/api/v1.0/";
+  static const String GET_IN_TOUCH_POINT = "email/send";
 }

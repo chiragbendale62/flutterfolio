@@ -36,7 +36,6 @@ class EmailRepositoryImpl implements EmailRepository {
         subject: subject,
         message: message,
       );
-      log("emailStatus : $emailStatus");
       return Right(emailStatus);
     } catch (e) {
       log(e.toString());

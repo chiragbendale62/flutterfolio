@@ -120,7 +120,7 @@ class ContentBuilder extends StatelessWidget {
                 ),
                 const SpaceW40(),
                 SizedBox(
-                  width: width * 0.75,
+                  width: width * 0.68,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

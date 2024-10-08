@@ -3,7 +3,6 @@ import 'package:flutterfolio/core/layout/adaptive.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
 import 'package:flutterfolio/presentation/pages/widgets/animated_footer.dart';
 import 'package:flutterfolio/presentation/pages/widgets/page_header.dart';
-import 'package:flutterfolio/presentation/pages/works/widgets/noteworthy_projects.dart';
 import 'package:flutterfolio/presentation/widgets/custom_spacer.dart';
 import 'package:flutterfolio/presentation/widgets/page_wrapper.dart';
 import 'package:flutterfolio/presentation/widgets/project_item.dart';
@@ -105,11 +104,11 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
               }
             },
           ),
-          const CustomSpacer(heightFactor: 0.1),
-          Padding(
-            padding: padding,
-            child: const NoteWorthyProjects(),
-          ),
+          // const CustomSpacer(heightFactor: 0.1),
+          // Padding(
+          //   padding: padding,
+          //   child: const NoteWorthyProjects(),
+          // ),
           const CustomSpacer(heightFactor: 0.15),
           const AnimatedFooter(),
         ],

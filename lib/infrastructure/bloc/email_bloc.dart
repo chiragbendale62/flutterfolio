@@ -13,27 +13,30 @@ class EmailBloc extends Bloc<EmailEvent, EmailState> {
 
   EmailState get initialState => const EmailState.initial();
 
-  EmailBloc(this._emailRepository) : super(const EmailState.initial());
+  EmailBloc(this._emailRepository) : super(const EmailState.initial()) {
+    on<SendEmail>((event, emit) async => _mapSendEmailEventToState(event, emit));
+  }
 
-  Stream<EmailState> mapEventToState(
-    EmailEvent event,
-  ) async* {
-    yield const EmailState.sendingEmail();
+  Future<void> _mapSendEmailEventToState(EmailEvent event, Emitter<EmailState> emit) async {
+    try {
+      emit(const EmailState.sendingEmail());
 
-    final response = await _emailRepository.sendEmail(
-      name: event.name,
-      email: event.email,
-      subject: event.subject,
-      message: event.message,
-    );
-
-    yield* response.fold(
-      (failure) async* {
-        yield const EmailState.failure();
-      },
-      (data) async* {
-        yield const EmailState.emailSentSuccessFully();
-      },
-    );
+      final response = await _emailRepository.sendEmail(
+        name: event.name,
+        email: event.email,
+        subject: event.subject,
+        message: event.message,
+      );
+      response.fold(
+        (failure) async {
+          emit(const EmailState.failure());
+        },
+        (data) async {
+          emit(const EmailState.emailSentSuccessFully());
+        },
+      );
+    } catch (e) {
+      emit(const EmailState.failure()); // Handle broader exceptions
+    }
   }
 }

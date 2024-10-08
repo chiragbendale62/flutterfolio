@@ -29,14 +29,23 @@ class EmailApiImpl implements EmailApi {
     required String subject,
     required String message,
   }) async {
+    String serviceId = 'service_1x0bxcl';
+    String templateId = 'template_5vi0c5k';
+    String userId = 'raFL2RBUhyFPnbnvd';
     try {
       final response = await client.post(
         Uri.parse(StringConst.BASE_URL + StringConst.GET_IN_TOUCH_POINT),
-        body: jsonEncode({
-          "name": name,
-          "email": email,
-          "subject": subject,
-          "message": message,
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode({
+          'service_id': serviceId,
+          'template_id': templateId,
+          'user_id': userId,
+          'template_params': {
+            'name': name,
+            'email': email,
+            'subject': subject,
+            'message': message,
+          }
         }),
       );
 

@@ -50,7 +50,7 @@ class ExperienceData {
   ExperienceData({
     required this.position,
     required this.roles,
-    required this.location,
+    this.location,
     required this.duration,
     required this.company,
     this.companyUrl,
@@ -58,7 +58,7 @@ class ExperienceData {
 
   final String company;
   final String? companyUrl;
-  final String location;
+  final String? location;
   final String duration;
   final String position;
   final List<String> roles;
@@ -147,29 +147,29 @@ class Data {
   ];
 
   static List<String> mobileTechnologies = [
-    "Android",
-    "Kotlin",
-    "Flutter",
+    "C++",
     "Dart",
+    "Flutter",
+    "Kotlin",
     "Swift",
-    "Java Android",
   ];
 
   static List<String> otherTechnologies = [
-    "HTML 5",
-    "CSS 3",
-    "Node JS",
+    "HTML",
+    "CSS",
+    "JavaScript",
     "Git",
+    "Jenkins",
     "AWS",
     "Docker",
-    "Google Cloud",
-    "Azure",
-    "Gemini AI",
     "SQL",
-    "C++",
+    "Google Cloud API",
     "Firebase",
-    "Figma",
-    "Adobe XD",
+    "Azure",
+    "Postman",
+    "Generative AI",
+    "VS Code",
+    "Android Studio",
   ];
 
   static List<SocialData> socialData1 = [
@@ -191,6 +191,11 @@ class Data {
   ];
 
   static List<SocialData> socialData2 = [
+    SocialData(
+      name: StringConst.GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
+    ),
     SocialData(
       name: StringConst.LINKED_IN,
       iconData: FontAwesomeIcons.linkedin,
@@ -253,18 +258,6 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
-      company: StringConst.COMPANY_4,
-      position: StringConst.POSITION_4,
-      companyUrl: StringConst.COMPANY_4_URL,
-      roles: [
-        StringConst.COMPANY_4_ROLE_1,
-        StringConst.COMPANY_4_ROLE_2,
-        StringConst.COMPANY_4_ROLE_3,
-      ],
-      location: StringConst.LOCATION_4,
-      duration: StringConst.DURATION_4,
-    ),
-    ExperienceData(
       company: StringConst.COMPANY_3,
       position: StringConst.POSITION_3,
       companyUrl: StringConst.COMPANY_3_URL,
@@ -272,8 +265,10 @@ class Data {
         StringConst.COMPANY_3_ROLE_1,
         StringConst.COMPANY_3_ROLE_2,
         StringConst.COMPANY_3_ROLE_3,
+        StringConst.COMPANY_3_ROLE_4,
+        StringConst.COMPANY_3_ROLE_5,
       ],
-      location: StringConst.LOCATION_3,
+      // location: StringConst.LOCATION_3,
       duration: StringConst.DURATION_3,
     ),
     ExperienceData(
@@ -284,8 +279,10 @@ class Data {
         StringConst.COMPANY_2_ROLE_1,
         StringConst.COMPANY_2_ROLE_2,
         StringConst.COMPANY_2_ROLE_3,
+        StringConst.COMPANY_2_ROLE_4,
+        StringConst.COMPANY_2_ROLE_5,
       ],
-      location: StringConst.LOCATION_2,
+      // location: StringConst.LOCATION_2,
       duration: StringConst.DURATION_2,
     ),
     ExperienceData(
@@ -296,8 +293,10 @@ class Data {
         StringConst.COMPANY_1_ROLE_1,
         StringConst.COMPANY_1_ROLE_2,
         StringConst.COMPANY_1_ROLE_3,
+        StringConst.COMPANY_1_ROLE_4,
+        StringConst.COMPANY_1_ROLE_5,
       ],
-      location: StringConst.LOCATION_1,
+      // location: StringConst.LOCATION_1,
       duration: StringConst.DURATION_1,
     ),
   ];

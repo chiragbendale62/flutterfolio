@@ -51,8 +51,6 @@ class AppTheme {
     onSecondary: Color(0xFF322942),
     onSurface: Color(0xFF241E30),
     brightness: Brightness.light,
-    background: Color(0xFF322942),
-    onBackground: Color(0xFF322942),
   );
 
   static const _bold = FontWeight.w700;

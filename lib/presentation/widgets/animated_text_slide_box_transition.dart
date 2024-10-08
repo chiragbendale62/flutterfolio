@@ -1,3 +1,4 @@
+import 'package:auto_size_text_plus/auto_size_text_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfolio/core/utils/functions.dart';
 import 'package:flutterfolio/presentation/widgets/animated_slide_box.dart';
@@ -132,7 +133,7 @@ class _AnimatedTextSlideBoxTransitionState extends State<AnimatedTextSlideBoxTra
           ),
           PositionedTransition(
             rect: textPositionAnimation,
-            child: Text(
+            child: AutoSizeText(
               widget.text,
               style: widget.textStyle,
               textAlign: widget.textAlign,

@@ -36,27 +36,27 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
   @override
   void initState() {
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 1000),
       vsync: this,
     );
     _storyController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 700),
       vsync: this,
     );
     _technologyController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 700),
       vsync: this,
     );
     _technologyListController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 700),
       vsync: this,
     );
     _contactController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 700),
       vsync: this,
     );
     _quoteController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 1000),
       vsync: this,
     );
 
@@ -180,6 +180,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                             text: StringConst.ABOUT_DEV_STORY_CONTENT_1,
                             textStyle: bodyText1Style,
                           ),
+                          const CustomSpacer(heightFactor: 0.025),
                           AnimatedPositionedText(
                             controller: storySectionAnimation,
                             width: widthOfBody,
@@ -187,11 +188,20 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                             text: StringConst.ABOUT_DEV_STORY_CONTENT_2,
                             textStyle: bodyText1Style,
                           ),
+                          const CustomSpacer(heightFactor: 0.025),
                           AnimatedPositionedText(
                             controller: storySectionAnimation,
                             width: widthOfBody,
                             maxLines: 30,
                             text: StringConst.ABOUT_DEV_STORY_CONTENT_3,
+                            textStyle: bodyText1Style,
+                          ),
+                          const CustomSpacer(heightFactor: 0.025),
+                          AnimatedPositionedText(
+                            controller: storySectionAnimation,
+                            width: widthOfBody,
+                            maxLines: 30,
+                            text: StringConst.ABOUT_DEV_STORY_CONTENT_4,
                             textStyle: bodyText1Style,
                           ),
                         ],

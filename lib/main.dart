@@ -14,10 +14,7 @@ import 'package:layout/layout.dart';
 // web -> react, javascript
 
 // Certifications
-// TODO:: Add Cloud Certification from Udacity
-
-// Contact
-// TODO:: Fix email service
+// TODO:: Add Cloud Certification from any platform for any skills or technologies
 
 //add in run args
 // --web-renderer
