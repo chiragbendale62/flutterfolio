@@ -164,13 +164,13 @@ class _ContactPageState extends State<ContactPage> with SingleTickerProviderStat
           clearText();
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              backgroundColor: AppColors.white,
+              backgroundColor: AppColors.green,
               content: Text(
                 StringConst.EMAIL_RESPONSE,
                 textAlign: TextAlign.center,
                 style: textTheme.bodyLarge?.copyWith(
                   fontSize: Sizes.TEXT_SIZE_16,
-                  color: AppColors.black,
+                  color: AppColors.white,
                 ),
               ),
               duration: Animations.emailSnackBarDuration,

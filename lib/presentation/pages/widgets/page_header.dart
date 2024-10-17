@@ -82,6 +82,7 @@ class _PageHeaderState extends State<PageHeader> with SingleTickerProviderStateM
             alignment: Alignment.center,
             child: AnimatedTextSlideBoxTransition(
               controller: widget.headingTextController,
+              widthFactor: 1,
               text: widget.headingText,
               textStyle: headingStyle,
             ),

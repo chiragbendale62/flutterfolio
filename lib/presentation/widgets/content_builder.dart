@@ -77,6 +77,7 @@ class ContentBuilder extends StatelessWidget {
                     AnimatedTextSlideBoxTransition(
                       controller: controller,
                       text: section,
+                      widthFactor: 1.2,
                       textStyle: sectionStyle ?? defaultSectionStyle,
                     ),
                   ],

@@ -25,6 +25,7 @@ class AppColors {
 
   // Green
   static const Color lightGreen = Color(0xFFE4FFE1);
+  static const Color green = Colors.green;
 
   // Red
   static const Color errorRed = Color(0xFFFF2019);
